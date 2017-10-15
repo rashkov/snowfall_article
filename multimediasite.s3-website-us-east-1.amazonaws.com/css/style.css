@@ -1,0 +1,93 @@
+html,body{
+  font-family: 'BebasRegular';
+	width:100%;
+	height:100%;
+}
+.section{
+  background: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section:after{
+  content: "";
+  clear: left;
+  display: block;
+}
+.video-sequence .video{
+  min-height: 56.25vw;
+}
+.video{
+  float: left;
+  position: relative;
+  width: 100%;
+  /*overflow: hidden;*/
+}
+.video-container{
+  float: left;
+  /*overflow: hidden;*/
+  width: 100%;
+}
+.video-container video,
+.video-container img{
+  width: 100%;
+  position: absolute;
+}
+.scroll-text{
+  background-color:rgb(255,255,255,1);
+  color:rgba(255,255,255,.85);
+  text-align:center;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  position:relative;
+  width:450px;
+  font-size: 15pt;
+  opacity: 0;
+}
+.captions{
+  position: absolute;
+  left:7%;
+}
+.byline{
+  font: 12px/2em 'Helvetic Neue', Helvetica, Arial, sans-serif;
+  font-weight:700;
+}
+.dropcap{
+  float: left;
+  font: bold 53px/70px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: -7px 10px 0px 0px;
+  height: 1em;
+}
+.column{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 580px;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 569px){
+.section{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+}
+.scroll-prompt {
+  position: absolute;
+  bottom: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  opacity: 0.8;
+  font-weight: normal;
+  text-transform: uppercase;
+  z-index: 3;
+  margin-left: 7%;
+  padding-left: 112px;
+}
+.video-headline{
+  position: absolute;
+  top: 30%;
+  color: rgba(255, 255, 255, 0.78);
+  left: 7%;
+  border-bottom: 2px solid black;
+  font-size: 50px;
+  line-height: 55px;
+  padding-bottom: 35px;
+}
